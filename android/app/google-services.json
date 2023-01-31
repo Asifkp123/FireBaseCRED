@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "325984285418",
+    "project_id": "wiceproject-ba5ad",
+    "storage_bucket": "wiceproject-ba5ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325984285418:android:b6a0d0e3afcbac067d1d93",
+        "android_client_info": {
+          "package_name": "com.example.wiceprojet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325984285418-0fl62cpv5rctt1ccs0i93vvq7fhtuo0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmVHMhpBhnTu6jz73ZpJWbDQMBJFZIORI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325984285418-0fl62cpv5rctt1ccs0i93vvq7fhtuo0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
