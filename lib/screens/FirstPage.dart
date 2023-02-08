@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:wiceprojet/screens/ThirdPage.dart';
 
 import 'SecondPage.dart';
 
@@ -11,7 +12,7 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: SecondPage(),
+        body: ThirdPage(),
       ),
     );
   }

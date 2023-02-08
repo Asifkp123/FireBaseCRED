@@ -7,12 +7,13 @@ import 'package:wiceprojet/ProviderClass.dart';
 import 'ThirdPage.dart';
 
 class SecondPage extends StatelessWidget {
-  SecondPage({super.key});
+  const SecondPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     ProviderClass donationProvider =
         Provider.of<ProviderClass>(context, listen: false);
+    // donationProvider.TextFieldd();
 
     return Scaffold(
       body: Padding(
@@ -23,30 +24,33 @@ class SecondPage extends StatelessWidget {
             children: [
               TextField(
                 controller: vaue.Namecontroller,
-                decoration: InputDecoration(hintText: "Name"),
+                decoration: const InputDecoration(hintText: "Name"),
               ),
               TextField(
                 controller: vaue.PhoneController,
-                decoration: InputDecoration(hintText: "Phone Number"),
+                decoration: const InputDecoration(
+                  hintText: "Phone Number",
+                ),
               ),
-              TextField(
+              TextFormField(
                 controller: vaue.AgeController,
-                decoration: InputDecoration(hintText: "Age"),
+                decoration: const InputDecoration(hintText: "Age"),
               ),
               ElevatedButton.icon(
                   onPressed: () {
-                    print("click here");
-                    print("rere" + vaue.PhoneController.text.toString());
                     donationProvider.AddData();
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //       builder: (context) => const ThirdPage(),
-                    //       ),
-                    //    );
+
+                    //    donationProvider.getdataa();
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const ThirdPage(),
+                      ),
+                    );
+                    donationProvider.clearData();
                   },
-                  icon: Icon(Icons.add),
-                  label: Text("ADD"))
+                  icon: const Icon(Icons.mic),
+                  label: const Text("ADD"))
             ],
           );
         }),
